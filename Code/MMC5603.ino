@@ -1,7 +1,7 @@
 //For RP2040 Zero select board: 微雪RP2040-zero .
 //USB Stack: Adafruit TinyUSB. 
 //MMC5603 library: Adafruit MMC56x3.
-//Carrot 7.15 更新
+//Carrot 7.15 更新.
 
 #include <TinyUSB_Mouse_and_Keyboard.h>
 #include <OneButton.h>
