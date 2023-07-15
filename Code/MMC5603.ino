@@ -1,6 +1,8 @@
 
 
-//For RP2040 Zero select board: Raspberry Pi Pico W and USB Stack: Adafruit TinyUSB. MMC5603 library: Adafruit MMC56x3.
+//For RP2040 Zero select board: 微雪RP2040-zero .
+//USB Stack: Adafruit TinyUSB. 
+//MMC5603 library: Adafruit MMC56x3.
 
 #include <TinyUSB_Mouse_and_Keyboard.h>
 #include <OneButton.h>
@@ -75,11 +77,11 @@ Serial.println(zOffset);
 void loop()
 {
 
-// keep watching the push buttons
+// 持续监视按键
 button1.tick();
 button2.tick();
 
-// get the mag data
+// 获取磁力数据
 sensors_event_t event;
 delay(mag.getEvent(&event));
 mag.setContinuousMode(true);
